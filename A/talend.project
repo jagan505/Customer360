@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_zzneMFFuEeqkeIPM1Al6MA" label="a" description="" language="java" technicalLabel="A" creationDate="2020-02-17T02:12:54.758-0800" author="_zzneMVFuEeqkeIPM1Al6MA" productVersion="Talend Data Integration-7.2.1.20190620_1446" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/jagan505/Customer360.git&quot;,&quot;login&quot;:&quot;jagan505&quot;,&quot;passwd&quot;:&quot;Cq+MS3Xbc+QAlNbcYcW5xg==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" bigData="false">
+    <migrationTask xmi:id="_z4O4cFFuEeqkeIPM1Al6MA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_zzneMVFuEeqkeIPM1Al6MA" login="security@company.com" firstName="security" lastName="security" type="DI" additionnalData="{}"/>
+</xmi:XMI>
