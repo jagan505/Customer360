@@ -306,6 +306,7 @@
     </node>
     <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="448">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
       <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
@@ -328,6 +329,7 @@
     </node>
     <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="448">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -389,6 +391,7 @@
     </node>
     <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
       <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -519,6 +522,7 @@
     </node>
     <node componentName="tFlowMeterCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="576">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowMeterCatcher_1"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
       <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tFlowMeterCatcher_1">
@@ -541,6 +545,7 @@
     </node>
     <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="576">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -611,6 +616,7 @@
     </node>
     <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="576">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_3"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
       <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
       <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -785,30 +791,32 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
     </connection>
-    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tStatCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tStatCatcher_1" target="tLogCatcher_1">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
-    </connection>
     <connection connectorName="FLOW" label="ststcatcher" lineStyle="0" metaname="ststcatcher" offsetLabelX="-44" offsetLabelY="50" source="tMap_1" target="tDBOutput_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="ststcatcher"/>
     </connection>
     <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tMap_2">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
     </connection>
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tFlowMeterCatcher_1">
+      <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
     </connection>
     <connection connectorName="FLOW" label="copyOfststcatcher" lineStyle="0" metaname="copyOfststcatcher" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_2">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfststcatcher"/>
     </connection>
     <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFlowMeterCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tFlowMeterCatcher_1" target="tMap_3">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
     </connection>
     <connection connectorName="FLOW" label="copyOfststcatcher_0" lineStyle="0" metaname="copyOfststcatcher_0" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tDBOutput_3">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfststcatcher_0"/>
     </connection>
     <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tStatCatcher_1">
@@ -836,13 +844,13 @@
     </subjob>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_14945260-eb87-4a8d-9913-6f578722709d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AWJPuOSmH03fhf9iSgtKPCo3QEyaVmfjK4LmnIm9dyi47W36/jnkwQmDWaX47xiLq89paZTi1kQK
-V87EMOIQog==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_91fad72a-2e1f-4fc7-83be-700301c3a160"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g+FApPK3WYbT0IOapRSudPJds1YHa4uKNSKIcy5cHq+LePuV2VaV088tYYdYUuc21qOr0CcuA2b1
-+YEJgx8t/Q==</DigestValue></Reference></SignedInfo><SignatureValue>chqZ1W5NDCGSgYMcGatdvh2wK/aSEAdqhtncziwOgFikVve1dRQFU4XeCQHNMFKuHI8nHM/C1v3I
-QpWmfFroylJUQkLIEdxioOfisIKcyN/RQFZuz/tAY5BWLI+ZDG0ngWjrNwC3ghjNtu4qobVUxzwl
-v7i95/7/z6GDTcFPL8eGKeZWRDc90k4LPp82uS39CjR6Xifu5jweLGw6BGYsXst51+hUFYQviHHH
-Eyl+UNUY569pB1dHctTx4f44j+wJyLgisTZCzfNwPR5DisrEOmv8SlNJN//j+y/mlMVKHqEzNkMn
-YCO+X8R96mdsTHeu0LoX4Bouyz47IKP6KSprAg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_835a8631-3ff9-4d95-a82b-5d809627cd07"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>68ssT0t7bwevmK1KYzOMRlxxsXMRrXpFBpXRXC1DxiLXgR2kgOko+y2QznKIImPvQSXSPLY3notN
+Qp9S9dmfsA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bc313ce7-8335-4717-abda-6fd1dc6e98c4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ydky/6mIoQQSoUhivBj25Uyf10O1HKnZpLOJUeNg4tmOiiKRNq2/cYWrAUSu8sNz/ouIPNgjcdYH
+FKM0w1rNDQ==</DigestValue></Reference></SignedInfo><SignatureValue>VvQ4wLXuvFvFmBj9g/6zhNppzXgwFF9e5EeKfmttcNPdCaCExxztFLFCmKYz45kV1i3LcclboNcs
+O1FvpxiN+SSPc4vGYv2//EtXZYufV3uZAP6mQ/O9HKLCK2XmaN9bAnB67/FHRd1a7gquU7QVBAFJ
+OdqqCm5TZ0eD/noaxvgDfKVyEzL5MVo71ILzYhFOdjSXNVnxheF0EIiz8al9vmDT4f10SAMVRDAf
+LJMMXP+f9bmXEC+aVm2yBwVC1SQqiQ8C7R814YPWidDdQx5ZCShJ0OPacKuSBhCDjlWrsiDweTFO
+dK1LZvHzp3EKYI+WbS5L6lGg+7ignRpezsrv2Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -864,4 +872,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_91fad72a-2e1f-4fc7-83be-700301c3a160" Target="#_14945260-eb87-4a8d-9913-6f578722709d"><Timestamp>2020-03-10 08:43:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bc313ce7-8335-4717-abda-6fd1dc6e98c4" Target="#_835a8631-3ff9-4d95-a82b-5d809627cd07"><Timestamp>2020-03-10 08:45:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
