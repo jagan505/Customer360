@@ -124,7 +124,7 @@
         <column defaultValue="" key="false" length="8" name="duration" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Long" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
         <outputTables name="ststcatcher" sizeState="INTERMEDIATE">
           <mapperTableEntries expression="row1.moment " name="moment" nullable="true" type="id_Date"/>
@@ -172,7 +172,7 @@
       <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
       <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;StatCatcher&quot;"/>
-      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
       <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
       <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
@@ -355,7 +355,7 @@
         <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
         <outputTables name="copyOfststcatcher" sizeState="INTERMEDIATE">
           <mapperTableEntries expression="row2.moment " name="moment" nullable="true" type="id_Date"/>
@@ -399,7 +399,7 @@
       <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
       <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;LogCatcher&quot;"/>
-      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
       <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
       <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
@@ -570,7 +570,7 @@
         <column key="false" length="255" name="thresholds" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
         <outputTables name="copyOfststcatcher_0" sizeState="INTERMEDIATE">
           <mapperTableEntries expression="row3.moment " name="moment" nullable="true" type="id_Date"/>
@@ -620,7 +620,7 @@
       <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
       <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;FlowmeterCaycher&quot;"/>
-      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_CREATE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
       <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
       <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
@@ -828,13 +828,13 @@
     </subjob>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2c236920-14ef-4b5d-8d81-f1dbb414c612"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kODTAiAuAK2otZC1Fj7qv1euIt82KceXvn0o+8T+wDfoujGr8AYy1V5MsPy6w4aQMPJDJKI8KDdR
-FO2toXz6vw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fb1dd7f9-0e77-46d0-877a-173d1c321928"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7FWMUCc69BCQ5j23jA0aBvjHB7Mbk5mg7ThAOsf/S3ZgQgeAAtjvRFj07agLlPh1Ynjlp0JjuTGP
-m0m+Y9KLcQ==</DigestValue></Reference></SignedInfo><SignatureValue>P4LyWPekxheYoQD79wtEEv5M/sT/qW6EU0nbtvmVLKwp0obj5A4YId7KA0Inl4O2D6hA6iyLAAVp
-BLH0N5iMWxNEeIfwAy8VSNZIX2sEDLv0jhy5leRHRA4oEa+jBvci7WTyiqa5SkSKi5st02SQxQeW
-ojhyox8HuWxhtXY6H9hzhb4RAlyOXc5f51Ic0pRZd6WB1K9/wd56Dd4ypXHabQdA/XxKGmlkrJ/R
-N2DxysqrdV5Xy38EADtfvKtCJV53duRLiagom58/5nR3jv768jXWL/aCfxqLwIV25RByIX2thC/Y
-yC2mDbq4REBLkoPtPAvsAiPAed/GD8ZCkycn0Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_65f244b8-40f8-450c-ad1d-7b0e6dc2a7a9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8GbxNox67uxXm2JG9ZC534qQEhu2UrX2v/4aUQJdViH8rtwwmAH1WqFnvdEF23afzRlsv6OdqTho
+06rTAIeJwQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_75acdfe0-044a-4ecc-8fe7-638bf104f783"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qkFFJ/uTqHTg0yU2cC8c+nrCzv58fl9ancpPkt9d5vvEqaOXiEvnQe0j3Uw/PDNylQLp4X1OO+UC
+fHxd0ckD/g==</DigestValue></Reference></SignedInfo><SignatureValue>cycQ74tOX5zrydkdKGUP0+RC7ytih3/HQ6dFkJV15K16HSF8HybXOSc1LdhT0paAP4hz4GhlNe9o
+g7cGSrTeQ9LWKq0bmd99tCa5Wg2upL8SNebwezXGSywBNmtZMjpVgfo/fw1IVI4nQt7Y5LbWb/hV
+cSxgy2fZjEVFjpK+CuMtbtBaab5lCE9YbhHa1mVb2H3yxV8po65dq1ufb05Fy3eT/bfT9MaGMhq5
+HgIGQFnvjMeeaxBUmF995rFyndvZQNpCG67bdIFSt+pIBoLWjtS/VJsAYiqd39uBJsLU36/s8IpR
+/OgsoAUEeaZpSENilSxL+GK5f0TkLUeT/PuiBg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -856,4 +856,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fb1dd7f9-0e77-46d0-877a-173d1c321928" Target="#_2c236920-14ef-4b5d-8d81-f1dbb414c612"><Timestamp>2020-03-10 07:41:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_75acdfe0-044a-4ecc-8fe7-638bf104f783" Target="#_65f244b8-40f8-450c-ad1d-7b0e6dc2a7a9"><Timestamp>2020-03-10 07:43:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
