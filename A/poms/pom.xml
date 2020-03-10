@@ -15,6 +15,7 @@
     <module>jobs/process/sample_0.1</module>
     <module>jobs/process/job1_0.1</module>
     <module>jobs/process/code_0.1</module>
+    <module>jobs/joblets/audit_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
