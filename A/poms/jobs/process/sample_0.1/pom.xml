@@ -108,6 +108,11 @@
       <version>0.31.8</version>
     </dependency>
     <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.12</version>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.10</version>
@@ -121,6 +126,12 @@
       <groupId>org.example.a.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.a.joblet</groupId>
+      <artifactId>Audit</artifactId>
+      <version>0.1.0</version>
+      <type>pom</type>
     </dependency>
   </dependencies>
   <build>

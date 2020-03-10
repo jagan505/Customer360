@@ -5,6 +5,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_czwkUGKSEeqCS4ftLAZOlg",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
     "id" : "DataOperation",
     "version" : "Latest",
     "type" : "routine"
