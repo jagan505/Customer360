@@ -123,14 +123,10 @@
       <version>7.2.1</version>
     </dependency>
     <dependency>
-      <groupId>org.example.a.job</groupId>
-      <artifactId>customer</artifactId>
+      <groupId>org.example.a.joblet</groupId>
+      <artifactId>Audit</artifactId>
       <version>0.1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.example.a.job</groupId>
-      <artifactId>log_files</artifactId>
-      <version>0.1.0</version>
+      <type>pom</type>
     </dependency>
   </dependencies>
   <build>
